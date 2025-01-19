@@ -181,7 +181,7 @@ class PaginatedTable(SimpleTable):
         self.result_window.show()
 
         # close the window after 5 seconds
-        QTimer.singleShot(5000, self.result_window.close)
+        QTimer.singleShot(10000, self.result_window.close)
 
     def update_table(self):
         start_row = self.current_page * self.rows_per_page
